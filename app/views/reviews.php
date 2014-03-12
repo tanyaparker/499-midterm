@@ -16,6 +16,7 @@
 
 	<p><h2><b>Reviews</b></h2>
 <?php
+var_dump($fbpage);
 	if(sizeof($reviews) >= 1) {
 
 	foreach($reviews as $r) :
