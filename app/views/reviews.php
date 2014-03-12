@@ -21,8 +21,18 @@
 	if(sizeof($reviews) >= 1) {
 
 	foreach($reviews as $r) :
-		$img_url = "img\\" . $r->rating . "_star.png";
-		echo "<img src='$img_url'> <br />";
+		if($r->rating == 0)
+			echo "<img src='http://clipart-finder.com/data/png/Anonymous_zero_star_rating.png'> <br />";
+		if($r->rating == 1)
+			echo "<img src='http://4.bp.blogspot.com/-GmoX3Cm1lwU/Urgmc5u6YkI/AAAAAAAAFtg/cEGTwNVumUI/s1600/one+star.png'> <br />";
+		if($r->rating == 2)
+			echo "<img src='http://shannonathompson.files.wordpress.com/2014/03/two-star-rating.png'> <br />";
+		if($r->rating == 3)
+			echo "<img src='http://theathletestable.files.wordpress.com/2011/10/three-stars_0.png'> <br />";
+		if($r->rating == 4)
+			echo "<img src='http://community.mis.temple.edu/drinkabeer/files/2014/02/45.png'> <br />";
+		if($r->rating == 5)
+			echo "<img src='http://iceball.org/wp-content/uploads/2013/12/5stars.png'> <br />";
 		echo "$r->review_description <br />";
 		echo "<hr><p>";
 	endforeach;
