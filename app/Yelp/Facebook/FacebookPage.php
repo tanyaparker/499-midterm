@@ -1,8 +1,8 @@
 <?php
 
-namespace ITP\FacebookAPI;
+namespace Yelp\Facebook;
 
-class FacebookSearch {
+class FacebookPage {
 
 	public static function getResults($query)
 	{

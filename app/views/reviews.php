@@ -7,12 +7,14 @@
 <body>
 	<h1><?php echo $restaurant[0]->restaurant_name; ?></h1>
 
+<?php if($fbpage != null) {?>
 	<p><h2><b>Facebook Activity</b></h2>
 	<ul>
-		<li>Likes: <?php //Likes ?></li>
-		<li>Checkins: <?php //Checkins ?></li>
+		<li>Likes: <?php echo "$fbpage->likes"; ?></li>
+		<li>Checkins: <?php echo "$fbpage->checkins"; ?></li>
 	</ul>
 	<hr>
+<?php }?>
 
 	<p><h2><b>Reviews</b></h2>
 <?php

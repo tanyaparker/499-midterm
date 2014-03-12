@@ -1,5 +1,7 @@
 <?php
 
+use \Yelp\Facebook\FacebookPage;
+
 class ReviewController extends BaseController {
 
 	public function search($id)
@@ -7,9 +9,13 @@ class ReviewController extends BaseController {
 		$reviews = Review::search($id);
 		$restaurant = Restaurant::getRestaurant($id);
 
+		$facebook = new FacebookPage();
+		$fbpage = $facebook->getResults($restaurant[0]->facebook_page);
+
 		return View::make('reviews', [
 			'reviews'  => $reviews,
-			'restaurant' => $restaurant
+			'restaurant' => $restaurant,
+			'fbpage' => $fbpage
 		]);
 	}
 }
