@@ -8,9 +8,10 @@
 	},
 	"autoload": {
 		"psr-0": {
-			"ITP": "./app/"
+			"Yelp": "./app/"
 		},
 		"classmap": [
+			"app/Yelp/Facebook",
 			"app/commands",
 			"app/controllers",
 			"app/models",

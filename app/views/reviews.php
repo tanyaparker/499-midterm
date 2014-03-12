@@ -16,11 +16,10 @@
 
 	<p><h2><b>Reviews</b></h2>
 <?php
-var_dump($fbpage);
 	if(sizeof($reviews) >= 1) {
 
 	foreach($reviews as $r) :
-		$img_url = $r->rating . "_star.png";
+		$img_url = "img\\" . $r->rating . "_star.png";
 		echo "<img src='$img_url'> <br />";
 		echo "$r->review_description <br />";
 		echo "<hr><p>";
@@ -28,7 +27,7 @@ var_dump($fbpage);
 
 	}
 	else {
-		echo "<h1>Sorry. This restaurant has no reviews yet.</h1>";
+		echo "<h2>Sorry. This restaurant has no reviews yet.</h2>";
 	}
 ?>
 
