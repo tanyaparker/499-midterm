@@ -7,4 +7,12 @@ class Restaurant extends Eloquent {
 		$restaurants = DB::table('restaurants')->get();
 		return $restaurants;	
 	}
+
+	public static function getRestaurant($id)
+	{
+		$restaurant = DB::table('restaurants')
+			->where('id', '=', $id)
+			->get();
+		return $restaurant;
+	}
 }

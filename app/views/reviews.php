@@ -5,7 +5,7 @@
 </head>
 
 <body>
-	<h1><?php echo "Restaurant Name"; ?></h1>
+	<h1><?php echo $restaurant[0]->restaurant_name; ?></h1>
 
 	<p><h2><b>Facebook Activity</b></h2>
 	<ul>
