@@ -1,6 +1,6 @@
 <?php
 
-use \ITP\FacebookAPI\FacebookSearch;
+use \Yelp\Facebook\FacebookPage;
 
 class FacebookController extends BaseController {
 
@@ -13,7 +13,7 @@ class FacebookController extends BaseController {
 	{
 		$search = Input::get('search');
 
-		$facebook = new FacebookSearch();
+		$facebook = new FacebookPage();
 		$result = $facebook->getResults($search);
 
 		if($result) {

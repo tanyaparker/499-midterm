@@ -12,3 +12,7 @@
 */
 
 Route::get('/', 'RestaurantController@search');
+
+Route::pattern('id', '[0-9]+');
+
+Route::get('/restaurants/{id}/reviews', 'ReviewController@search');

@@ -10,5 +10,4 @@ class RestaurantController extends BaseController {
 			'restaurants'  => $restaurants
 		]);
 	}
-
 }
