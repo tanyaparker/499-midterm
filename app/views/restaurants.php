@@ -1,5 +1,3 @@
-<?php require_once 'box.css'; ?>
-
 <!doctype html>
 <html>
 <head>
@@ -15,8 +13,11 @@
 	foreach($restaurants as $r) :
 		echo "<p><b>$r->restaurant_name ($r->city)</b> <br />";
 		echo "$r->type <br />";
-		echo "Facebook Page: <a href='#'>$r->facebook_page</a> <br />";
-		echo "<a href='#'>link to reviews</a> <br />";
+		if($r->facebook_page == null) 
+			echo "Not on Facebook <br />";
+		else
+			echo "Facebook Page: <a href='http://www.facebook.com/$r->facebook_page'>here</a> <br />";
+		echo "<a href='/restaurants/$r->id/reviews'>View Reviews</a> <br />";
 		echo "<hr>";
 	endforeach;
 
