@@ -3,7 +3,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>YEelp</title>
+	<title>Yelp</title>
 </head>
 
 <body>
@@ -13,10 +13,10 @@
 	if(sizeof($restaurants) >= 1) {
 
 	foreach($restaurants as $r) :
-		echo "Restaurant Name (City)";
-		echo "Type of Cuisine";
-		echo "Facebook Page: link to facebook page";
-		echo "link to reviews";
+		echo "<p><b>Restaurant Name (City)</b> <br />";
+		echo "Type of Cuisine <br />";
+		echo "Facebook Page: link to facebook page <br />";
+		echo "link to reviews <br />";
 		//$r->title;
 		echo "<hr>";
 	endforeach;

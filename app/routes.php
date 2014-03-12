@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/', 'RestaurantController@getAll');
+Route::get('/', 'RestaurantController@search');
