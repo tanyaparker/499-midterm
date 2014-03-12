@@ -3,13 +3,13 @@
 <!doctype html>
 <html>
 <head>
-	<title>DVD Results</title>
+	<title>YEelp</title>
 </head>
 
 <body>
-	<h1>Your search returned: </h1>
+	<h1>Yelp</h1>
 
-	<?php if(sizeof($dvds) >= 1) {?>
+<!-- 	<?php if(sizeof($dvds) >= 1) {?>
 <table>
 
 	<tr style="font-size: 20px;">
@@ -39,7 +39,7 @@
 else {
 	echo "<h1>nothing. Try again!</h1>";
 }
-?>
+?> -->
 
 </body>
 </html>

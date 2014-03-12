@@ -13,22 +13,5 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('restaurants');
 });
-
-Route::get('/songs/search', 'SongController@search');
-
-Route::get('/songs', 'SongController@listSongs');
-
-Route::get('/dvds/search', 'DvdController@search');
-
-Route::get('/dvds', 'DvdController@listDvds');
-
-Route::get('/dvds/create', 'DvdController@create');
-
-Route::post('/dvds', 'DvdController@insert');
-
-// Event::listen('illuminate.query', function($sql)
-// {
-//   echo "<div style='color: green;'>$sql</div>";
-// });
