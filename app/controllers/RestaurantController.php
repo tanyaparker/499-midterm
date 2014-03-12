@@ -4,7 +4,7 @@ class RestaurantController extends BaseController {
 
 	public function search()
 	{
-		$restaurants = Restaurant::getReviews();
+		$restaurants = Restaurant::search();
 
 		return View::make('restaurants', [
 			'restaurants'  => $restaurants

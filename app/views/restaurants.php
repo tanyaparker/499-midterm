@@ -13,11 +13,10 @@
 	if(sizeof($restaurants) >= 1) {
 
 	foreach($restaurants as $r) :
-		echo "<p><b>Restaurant Name (City)</b> <br />";
-		echo "Type of Cuisine <br />";
-		echo "Facebook Page: link to facebook page <br />";
-		echo "link to reviews <br />";
-		//$r->title;
+		echo "<p><b>$r->restaurant_name ($r->city)</b> <br />";
+		echo "$r->type <br />";
+		echo "Facebook Page: <a href='#'>$r->facebook_page</a> <br />";
+		echo "<a href='#'>link to reviews</a> <br />";
 		echo "<hr>";
 	endforeach;
 
