@@ -9,14 +9,6 @@
 <body>
 	<h1>Yelp</h1>
 
-	Restaurant Name (City)
-	Type of Cuisine
-	Facebook Page: link to facebook page
-	link to reviews
-
-	<hr>
-
-
 <?php 
 	if(sizeof($restaurants) >= 1) {
 
@@ -28,7 +20,7 @@
 		//$r->title;
 		echo "<hr>";
 	endforeach;
-	
+
 	}
 	else {
 		echo "<h1>Sorry. There are no restaurants to display.</h1>";

@@ -11,7 +11,4 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('restaurants');
-});
+Route::get('/', 'RestaurantController@getAll');
